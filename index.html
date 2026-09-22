@@ -1,282 +1,274 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae - Estefanía Deossa de la Fuente</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #0d0d0d;
-      --card-bg: #181818;
-      --accent-gold: #e5a93b;
-      --text-main: #f0f0f0;
-      --text-muted: #b3b3b3;
-      --border-color: #2a2a2a;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Curriculum - Estefanía Deossa de la Fuente</title>
+	<meta name="description" content="Currículum profesional de Estefanía Deossa de la Fuente - Animación, Figuración, Teatro Musical y Danza."/>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+	
+	<!-- Estilos idénticos a la plantilla original de Artfy Studio -->
+	<link rel='stylesheet' id='hello-elementor-css' href='https://bon.artfystudio.es/wp-content/themes/hello-elementor/style.min.css?ver=3.2.1' media='all' />
+	<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://bon.artfystudio.es/wp-content/themes/hello-elementor/theme.min.css?ver=3.2.1' media='all' />
+	<link rel='stylesheet' id='elementor-frontend-css' href='https://bon.artfystudio.es/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.17.3' media='all' />
+	<link rel='stylesheet' id='elementor-pro-css' href='https://bon.artfystudio.es/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.8.2' media='all' />
+	<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CSorts+Mill+Goudy:400&#038;display=auto&#038;ver=7.0.2' media='all' />
+	<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://bon.artfystudio.es/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+	<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://bon.artfystudio.es/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+	<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://bon.artfystudio.es/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      line-height: 1.6;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 30px;
-    }
-
-    .sidebar {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 25px;
-      border: 1px solid var(--border-color);
-    }
-
-    .profile-img-container {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-gold);
-    }
-
-    .section-title {
-      color: var(--accent-gold);
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      border-bottom: 1px solid var(--accent-gold);
-      padding-bottom: 5px;
-    }
-
-    .contact-info p, .measures p, .languages p {
-      margin-bottom: 10px;
-      font-size: 0.95rem;
-    }
-
-    .contact-info i {
-      color: var(--accent-gold);
-      width: 20px;
-      margin-right: 8px;
-    }
-
-    .social-links a {
-      color: var(--text-main);
-      text-decoration: none;
-      display: block;
-      margin-bottom: 8px;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: var(--accent-gold);
-    }
-
-    .main-content {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 30px;
-      border: 1px solid var(--border-color);
-    }
-
-    .header-name {
-      margin-bottom: 30px;
-    }
-
-    .header-name h1 {
-      font-size: 2.2rem;
-      color: var(--accent-gold);
-      text-transform: uppercase;
-    }
-
-    .header-name h2 {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
-
-    .timeline-item {
-      margin-bottom: 20px;
-      padding-left: 15px;
-      border-left: 2px solid var(--accent-gold);
-    }
-
-    .timeline-item h3 {
-      font-size: 1.1rem;
-      color: var(--text-main);
-    }
-
-    .timeline-item .company {
-      color: var(--accent-gold);
-      font-weight: bold;
-      font-size: 0.95rem;
-    }
-
-    .timeline-item .date {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 5px;
-    }
-
-    .timeline-item p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+	<style>
+		body {
+			background-color: #121212;
+			color: #e0e0e0;
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.artfy-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 40px;
+			background-color: #0a0a0a;
+			border-bottom: 1px solid #222;
+		}
+		.artfy-header h2 a {
+			color: #fff;
+			text-decoration: none;
+			font-family: 'Sorts Mill Goudy', serif;
+			font-size: 1.8rem;
+			letter-spacing: 1px;
+		}
+		.artfy-socials a {
+			color: #aaa;
+			margin-right: 15px;
+			font-size: 1.2rem;
+			transition: color 0.3s;
+		}
+		.artfy-socials a:hover {
+			color: #fff;
+		}
+		.artfy-container {
+			max-width: 1200px;
+			margin: 40px auto;
+			padding: 0 20px;
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			gap: 50px;
+		}
+		.artfy-sidebar img {
+			width: 100%;
+			border-radius: 4px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+			margin-bottom: 25px;
+		}
+		.artfy-section-title {
+			font-family: 'Sorts Mill Goudy', serif;
+			font-size: 1.5rem;
+			color: #fff;
+			border-bottom: 1px solid #333;
+			padding-bottom: 8px;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+		.artfy-details p {
+			margin: 8px 0;
+			color: #bbb;
+			font-size: 0.95rem;
+		}
+		.artfy-details strong {
+			color: #fff;
+		}
+		.artfy-main h1 {
+			font-family: 'Sorts Mill Goudy', serif;
+			font-size: 2.8rem;
+			color: #fff;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		.artfy-main h3 {
+			font-size: 1.1rem;
+			color: #888;
+			font-weight: 300;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.artfy-bio {
+			font-size: 1.05rem;
+			line-height: 1.8;
+			color: #ccc;
+			margin-bottom: 40px;
+		}
+		.artfy-item {
+			margin-bottom: 25px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #1f1f1f;
+		}
+		.artfy-item h4 {
+			color: #fff;
+			font-size: 1.15rem;
+			margin: 0 0 5px 0;
+		}
+		.artfy-item .sub {
+			color: #e5a93b;
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+		.artfy-item .date {
+			color: #666;
+			font-size: 0.85rem;
+			margin-bottom: 8px;
+		}
+		.artfy-item p {
+			color: #aaa;
+			font-size: 0.95rem;
+			margin: 0;
+		}
+		@media (max-width: 768px) {
+			.artfy-container {
+				grid-template-columns: 1fr;
+			}
+			.artfy-header {
+				padding: 15px 20px;
+			}
+		}
+	</style>
 </head>
-<body>
+<body class="wp-singular page-template elementor-default">
 
-  <div class="container">
-    <aside class="sidebar">
-      <div class="measures">
-        <h3 class="section-title">Medidas</h3>
-        <p><strong>Altura:</strong> 171 cm</p>
-        <p><strong>Busto:</strong> 92 cm</p>
-        <p><strong>Cintura:</strong> 71 cm</p>
-        <p><strong>Cadera:</strong> 101 cm</p>
-        <p><strong>Calzado:</strong> 40 cm</p>
-      </div>
+	<!-- CABECERA ESTILO ARTFY STUDIO -->
+	<header class="artfy-header">
+		<div class="artfy-socials">
+			<a href="https://instagram.com/Onelonelyfairy" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://tiktok.com/@Onelonelyfairy.dance" target="_blank"><i class="fab fa-tiktok"></i></a>
+		</div>
+		<h2><a href="#">Estefanía Deossa</a></h2>
+		<div>
+			<a href="mailto:estefaniadeossaf@gmail.com" style="color:#fff; font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+		</div>
+	</header>
 
-      <div class="contact-info">
-        <h3 class="section-title">Contacto</h3>
-        <p><i class="fas fa-phone"></i> 657-718-296</p>
-        <p><i class="fas fa-envelope"></i> estefaniadeossaf@gmail.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Valencia</p>
-      </div>
+	<!-- CONTENIDO PRINCIPAL ESTRUCTURADO COMO BON.ARTFYSTUDIO.ES -->
+	<div class="artfy-container">
+		
+		<!-- COLUMNA IZQUIERDA (FOTO + DATOS + MEDIDAS) -->
+		<aside class="artfy-sidebar">
+			<!-- Foto principal de la ficha -->
+			<img src="tu-foto.jpg" alt="Estefanía Deossa de la Fuente">
 
-      <div class="social-links">
-        <h3 class="section-title">Redes Sociales</h3>
-        <a href="https://instagram.com/Onelonelyfairy" target="_blank"><i class="fab fa-instagram"></i> @Onelonelyfairy</a>
-        <a href="https://tiktok.com/@Onelonelyfairy.dance" target="_blank"><i class="fab fa-tiktok"></i> @Onelonelyfairy.dance</a>
-      </div>
+			<h3 class="artfy-section-title">Medidas</h3>
+			<div class="artfy-details">
+				<p><strong>Altura:</strong> 171 cm</p>
+				<p><strong>Busto:</strong> 92 cm</p>
+				<p><strong>Cintura:</strong> 71 cm</p>
+				<p><strong>Cadera:</strong> 101 cm</p>
+				<p><strong>Calzado:</strong> 40 cm</p>
+			</div>
 
-      <div class="languages">
-        <h3 class="section-title">Idiomas</h3>
-        <p><strong>Castellano:</strong> Nativo</p>
-        <p><strong>Valenciano:</strong> Avanzado</p>
-        <p><strong>Inglés:</strong> Conversacional</p>
-        <p><strong>Francés:</strong> Básico</p>
-        <p><strong>Coreano:</strong> Básico (A2)</p>
-      </div>
-    </aside>
+			<h3 class="artfy-section-title">Contacto</h3>
+			<div class="artfy-details">
+				<p><strong>Teléfono:</strong> 657-718-296</p>
+				<p><strong>Email:</strong> estefaniadeossaf@gmail.com</p>
+				<p><strong>Ciudad:</strong> Valencia, España</p>
+			</div>
 
-    <main class="main-content">
-      <header class="header-name">
-        <h1>Estefanía Deossa de la Fuente</h1>
-        <h2>Animación | Figuración | Teatro Musical | Danza</h2>
-      </header>
+			<h3 class="artfy-section-title">Idiomas</h3>
+			<div class="artfy-details">
+				<p><strong>Castellano:</strong> Nativo</p>
+				<p><strong>Valenciano:</strong> Avanzado</p>
+				<p><strong>Inglés:</strong> Conversacional</p>
+				<p><strong>Francés:</strong> Básico</p>
+				<p><strong>Coreano:</strong> Básico (A2)</p>
+			</div>
+		</aside>
 
-      <section>
-        <h3 class="section-title">Presentación</h3>
-        <p>
-          ¡Hola! Me llamo Estefi, soy no binarie y tengo 24 años.
-          Me encanta el kung fu, bailar, cantar, actuar, dibujar, modelar y de vez en cuando hago fotos que después cuelgo en mi Instagram.
-        </p>
-      </section>
+		<!-- COLUMNA DERECHA (NOMBRE + BIOGRAFÍA + EXPERIENCIA) -->
+		<main class="artfy-main">
+			<h1>Estefanía Deossa de la Fuente</h1>
+			<h3>Animación | Figuración | Teatro Musical | Danza</h3>
 
-      <section>
-        <h3 class="section-title">Experiencia Profesional</h3>
-        
-        <div class="timeline-item">
-          <h3>Animación</h3>
-          <p class="company">Five Events</p>
-          <p class="date">Julio 2026 - Septiembre 2026</p>
-          <p>Diversas animaciones para niños en el Hotel Aguamarina en Menorca, espectáculos musicales como "The Wicked" o "Moulan Rouge" y fiestas propias del hotel.</p>
-        </div>
+			<h3 class="artfy-section-title">Presentación</h3>
+			<p class="artfy-bio">
+				¡Hola! Me llamo Estefi, soy no binarie y tengo 24 años.
+				Me encanta el kung fu, bailar, cantar, actuar, dibujar, modelar y de vez en cuando hago fotos que después cuelgo en mi Instagram.
+			</p>
 
-        <div class="timeline-item">
-          <h3>Animación de Artes Marciales</h3>
-          <p class="company">Shaolin Valencia</p>
-          <p class="date">Septiembre 2024 - Mayo 2026</p>
-          <p>Diversas animaciones culturales chinas portando leones, dragones y haciendo exhibiciones de kung fu y nunchakus. Impartió clases de kung fu para niños.</p>
-        </div>
+			<h3 class="artfy-section-title">Experiencia Profesional</h3>
 
-        <div class="timeline-item">
-          <h3>Animación</h3>
-          <p class="company">Airshow</p>
-          <p class="date">Agosto 2022 y Enero 2023</p>
-          <p>Animación portando muñecos hinchables en cabalgatas infantiles.</p>
-        </div>
+			<div class="artfy-item">
+				<h4>Animación</h4>
+				<div class="sub">Five Events</div>
+				<div class="date">Julio 2026 - Septiembre 2026</div>
+				<p>Diversas animaciones para niños en el Hotel Aguamarina en Menorca, espectáculos musicales como "The Wicked" o "Moulan Rouge" y fiestas propias del hotel.</p>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Musical "Las Guerreras KPOP"</h3>
-          <p class="company">Producciones Goc</p>
-          <p class="date">Diciembre 2025 - Junio 2026</p>
-          <p>Show basado en las guerreras kpop en el que desempeño actividades de danza, canto y actuación.</p>
-        </div>
+			<div class="artfy-item">
+				<h4>Animación de Artes Marciales</h4>
+				<div class="sub">Shaolin Valencia</div>
+				<div class="date">Septiembre 2024 - Mayo 2026</div>
+				<p>Diversas animaciones culturales chinas portando leones, dragones y haciendo exhibiciones de kung fu y nunchakus. Impartió clases de kung fu para niños.</p>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Figuración</h3>
-          <p class="company">Makabro Coliseo / TDA Agency / La Agencia Tourquese / Empleo Express ETT</p>
-          <p class="date">2023 - 2025</p>
-          <p>Figurante para cortos, publicidad asiática de sponsors del Valencia CF, videoclips musicales y publicidad comercial (Renault).</p>
-        </div>
+			<div class="artfy-item">
+				<h4>Animación</h4>
+				<div class="sub">Airshow</div>
+				<div class="date">Agosto 2022 y Enero 2023</div>
+				<p>Animación portando muñecos hinchables en cabalgatas infantiles.</p>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Musical "Jesucrist Superstar"</h3>
-          <p class="company">Escuela "Off Valencia"</p>
-          <p class="date">14-24 Abril 2022</p>
-          <p>Show musical basado en la historia de Jesucristo en el s. XX.</p>
-        </div>
-      </section>
+			<div class="artfy-item">
+				<h4>Musical "Las Guerreras KPOP"</h4>
+				<div class="sub">Producciones Goc</div>
+				<div class="date">Diciembre 2025 - Junio 2026</div>
+				<p>Show basado en las guerreras K-POP en el que desempeño actividades de danza, canto y actuación.</p>
+			</div>
 
-      <section>
-        <h3 class="section-title">Estudios y Formación</h3>
+			<div class="artfy-item">
+				<h4>Figuración</h4>
+				<div class="sub">Makabro Coliseo / TDA Agency / La Agencia Tourquese / Empleo Express ETT</div>
+				<div class="date">2023 - 2025</div>
+				<p>Figurante para cortos, publicidad asiática de sponsors del Valencia CF, videoclips musicales y publicidad comercial (Renault).</p>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Artes Marciales (Kung Fu)</h3>
-          <p class="company">Shaolin Valencia</p>
-          <p class="date">Agosto 2024 - Junio 2025</p>
-        </div>
+			<div class="artfy-item">
+				<h4>Musical "Jesucrist Superstar"</h4>
+				<div class="sub">Escuela "Off Valencia"</div>
+				<div class="date">14-24 Abril 2022</div>
+				<p>Show musical basado en la historia de Jesucristo en el s. XX.</p>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Cursos PICE</h3>
-          <p class="company">Cámara Valencia</p>
-          <p class="date">2022 - 2024</p>
-          <p>• Curso: Programación Python ESI (110h)</p>
-          <p>• Curso: Uñas esculpidas (180h)</p>
-          <p>• Curso: Técnico de Maquillaje (180h)</p>
-        </div>
+			<h3 class="artfy-section-title">Estudios y Formación</h3>
 
-        <div class="timeline-item">
-          <h3>Formación en Teatro Musical</h3>
-          <p class="company">Escuela de Artes Escénicas Off Valencia / El Camerino de Frank Alonso</p>
-          <p class="date">2019 - 2023</p>
-        </div>
+			<div class="artfy-item">
+				<h4>Artes Marciales (Kung Fu)</h4>
+				<div class="sub">Shaolin Valencia</div>
+				<div class="date">Agosto 2024 - Junio 2025</div>
+			</div>
 
-        <div class="timeline-item">
-          <h3>Danza (Hip Hop, Sexy Style, Jazz)</h3>
-          <p class="company">Campamento EDAE / Academia Art i Ball</p>
-          <p class="date">2014 - 2017</p>
-        </div>
-      </section>
-    </main>
-  </div>
+			<div class="artfy-item">
+				<h4>Cursos PICE</h4>
+				<div class="sub">Cámara Valencia</div>
+				<div class="date">2022 - 2024</div>
+				<p>• Programación Python ESI (110h)<br>• Uñas esculpidas (180h)<br>• Técnico de Maquillaje (180h)</p>
+			</div>
+
+			<div class="artfy-item">
+				<h4>Formación en Teatro Musical</h4>
+				<div class="sub">Escuela de Artes Escénicas Off Valencia / El Camerino de Frank Alonso</div>
+				<div class="date">2019 - 2023</div>
+			</div>
+
+			<div class="artfy-item">
+				<h4>Danza (Hip Hop, Sexy Style, Jazz)</h4>
+				<div class="sub">Campamento EDAE / Academia Art i Ball</div>
+				<div class="date">2014 - 2017</div>
+			</div>
+
+		</main>
+	</div>
 
 </body>
 </html>
